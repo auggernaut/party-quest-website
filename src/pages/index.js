@@ -18,7 +18,7 @@ import screenshot2 from "../images/screenshot5.jpg"
 import screenshot3 from "../images/screenshot4.jpg"
 import appStore from "../images/app-store-badge.png"
 import playStore from "../images/google-play-badge-1.png"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 
 import { IconContext } from "react-icons"
 
