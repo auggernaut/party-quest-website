@@ -71,6 +71,7 @@ const NavWrapper = styled.nav`
 
     img {
       width: 180px;
+      height: auto;
 
       @media (min-width: 768px) {
         width: 200px;
