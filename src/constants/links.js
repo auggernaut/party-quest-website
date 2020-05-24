@@ -5,10 +5,6 @@ export default [
   },
   {
     path: "/",
-    text: "packages",
-  },
-  {
-    path: "/",
-    text: "contact",
-  },
+    text: "download",
+  }
 ]

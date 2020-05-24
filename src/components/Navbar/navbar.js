@@ -1,8 +1,8 @@
 import React, { useState } from "react"
 import links from "../../constants/links"
 import styled from "styled-components"
-import Logo from "../../images/startup-logo.svg"
-import { Link, animateScroll as scroll } from "react-scroll"
+import Logo from "../../images/party-quest-logo.png"
+import { Link } from "react-scroll"
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
@@ -21,6 +21,7 @@ const Navbar = () => {
               : `${"toggle-btn"}`
           }
           type="button"
+          aria-label="Menu Hamburger"
           onClick={toggleNav}
         >
           <span></span>
@@ -69,14 +70,14 @@ const NavWrapper = styled.nav`
     justify-content: space-between;
 
     img {
-      width: 90px;
+      width: 180px;
 
       @media (min-width: 768px) {
-        width: 100px;
+        width: 200px;
       }
 
       @media (min-width: 1200px) {
-        width: 120px;
+        width: 200px;
       }
     }
   }

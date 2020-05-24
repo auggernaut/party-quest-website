@@ -5,7 +5,7 @@ const Package = ({ title, children, active }) => {
   return (
     <PackageWrapper id="packages" className={active ? "active" : "not-active"}>
       <div className="content">
-        <h2>{title}</h2>
+        {/* <h2>{title}</h2> */}
         {children}
       </div>
     </PackageWrapper>
@@ -87,6 +87,10 @@ const PackageWrapper = styled.article`
       transform: skew(3deg, 3deg);
       border-radius: 4px;
     }
+  }
+
+  .screenshot {
+    width: 300px;
   }
 `
 

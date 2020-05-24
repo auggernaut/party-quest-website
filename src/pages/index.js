@@ -4,57 +4,58 @@ import Banner from "../components/Banner/banner"
 import TextBlock from "../components/TextBlock/textBlock"
 import TextBlockImg from "../components/TextBlockImg/textBlockImg"
 import Perk from "../components/Perk/perk"
-import Button from "../components/Button/button"
+// import Button from "../components/Button/button"
 import Packages from "../components/Packages/packages"
 import Package from "../components/Package/package"
-import Contact from "../components/Contact/contact"
-import { Link } from "react-scroll"
+// import Contact from "../components/Contact/contact"
+// import { Link } from "react-scroll"
 
-import perk1Img from "../images/speed.svg"
-import perk2Img from "../images/piggy-bank.svg"
-import perk3Img from "../images/friendly-staff.svg"
+import perk1Img from "../images/monster.png"
+import perk2Img from "../images/character.png"
+import perk3Img from "../images/emojis.png"
+import screenshot1 from "../images/games_list.jpg"
+import screenshot2 from "../images/screenshot5.jpg"
+import screenshot3 from "../images/screenshot4.jpg"
+import appStore from "../images/app-store-badge.png"
+import playStore from "../images/google-play-badge-1.png"
+import SEO from "../components/seo"
 
 import { IconContext } from "react-icons"
-import { MdDone, MdClear } from "react-icons/md"
 
 export default () => (
   <>
     <Layout>
+      <SEO />
       <Banner />
       <TextBlock
         id="about"
-        title="Developing a new business is never easy, but Startup is here to help"
-        paragraph="With a super-fast Gatsby powered website you have the perfect platform to get your idea off the ground. Its the perfect template to help turn your idea into a reality."
+        title="At the heart of tabletop roleplaying is storytelling."
+        paragraph="Sometimes you need a little nudge, a story prompt, some structure, and... monsters. Party Quest gets out of the way so you can focus on what matters: your story."
       >
-        <Link to="perks" smooth={true} duration={500}>
-          <Button cta="Tell Me More!" />
-        </Link>
       </TextBlock>
       <TextBlockImg
         id="perks"
-        title="We have the tools to help you suceed"
-        subtitle="Startup is perfect for helping to to start and grow your business. As
-          you begin to gain new clients and expand you will see the benefits of
-          a super-fast Gatsby website"
+        title="What is your role?"
+        subtitle="Whether you have an adventure in mind, a character with a wild backstory, or an itch to read along and react... there's a role for you."
       >
         <div className="flex-container trio-block">
           <Perk
             img={perk1Img}
-            alt="Super fast speed increases"
-            title="Speedy"
-            content="Super-fast response times ensure your business is not affected"
+            alt="Gamemaster creates the game."
+            title="Gamemaster"
+            content="Get the story started and describe what happens next."
           />
           <Perk
             img={perk2Img}
-            alt="Great savings to be made"
-            title="Affordable"
-            content="A choice of packages to suit every business type and size"
+            alt="Characters take actions."
+            title="Character"
+            content="Design a character, take actions, and stay alive."
           />
           <Perk
             img={perk3Img}
-            alt="Super fast speed increases"
-            title="Friendly"
-            content="Advisors who are available 24/7, all with exprt knowledge"
+            alt="Applaud the players."
+            title="Reactor"
+            content="Read along with the players and react to the story."
           />
         </div>
       </TextBlockImg>
@@ -70,80 +71,32 @@ export default () => (
           }}
         >
           <Package title="Standard">
-            <ul>
-              <li>
-                <MdDone />1 User
-              </li>
-              <li>
-                <MdDone />
-                1GB Storage
-              </li>
-              <li className="linethrough">
-                <MdClear color="red" />
-                Dedicated Advisor
-              </li>
-              <li className="linethrough">
-                <MdClear color="red" />
-                24/7 Support
-              </li>
-            </ul>
-            <Link to="contact" smooth={true} duration={500}>
-              <Button cta="I want this!" />
-            </Link>
+            <img src={screenshot3} alt="Pick a game" className="screenshot"/>
           </Package>
           <Package title="Hyper" active={true}>
-            <ul>
-              <li>
-                <MdDone />
-                24/7 Support
-              </li>
-              <li>
-                <MdDone />
-                Dedicated Advisor
-              </li>
-              <li>
-                <MdDone />
-                Unlimited Storage
-              </li>
-              <li>
-                <MdDone />
-                Unlimited Users
-              </li>
-            </ul>
-            <Link to="contact" smooth={true} duration={500}>
-              <Button cta="I want this!" />
-            </Link>
+            <img src={screenshot1} alt="Pick a game" className="screenshot"/>
           </Package>
           <Package title="Super">
-            <ul>
-              <li>
-                <MdDone />
-                10 Users
-              </li>
-              <li>
-                <MdDone />
-                500GB Storage
-              </li>
-              <li>
-                <MdDone />
-                Advice Support
-              </li>
-              <li className="linethrough">
-                <MdClear color="red" />
-                Dedicated Advisor
-              </li>
-            </ul>
-            <Link to="contact" smooth={true} duration={500}>
-              <Button cta="I want this!" />
-            </Link>
+          <img src={screenshot2} alt="Pick a game" className="screenshot"/>
           </Package>
         </IconContext.Provider>
       </Packages>
-      <Contact
+      <TextBlock
+        id="download"
+        title="Download the App"
+        paragraph="Available for Free on iOS and Android."
+      >
+        {/* <Link to="perks" smooth={true} duration={500}>
+          <Button cta="Tell Me More!" />
+        </Link> */}
+        <img src={appStore} alt="Download on the AppStore" className="appStoreButton"/>
+        <img src={playStore} alt="Download on Google Play" className="appStoreButton"/>
+      </TextBlock>
+      {/* <Contact
         id="contact"
         title="Contact Startup today and see how we can help your business grow"
         subtitle="Every second counts when you're looking to get your new business started. Drop Startup a message and one of our representatives will be in contact"
-      />
+      /> */}
     </Layout>
   </>
 )

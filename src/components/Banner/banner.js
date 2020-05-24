@@ -9,7 +9,7 @@ import { motion } from "framer-motion"
 const Banner = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "flames.jpg" }) {
+      file(relativePath: { eq: "clouds.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
@@ -38,7 +38,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            It's time to make your business <span>stand out</span>
+            It's time to unleash your <span>imagination.</span>
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -46,8 +46,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            Startup is here to help you achieve your business and personal
-            goals, all through a stylish theme
+            The tabletop roleplay game that requires no table is here.
           </motion.p>
           <Link to="about" smooth={true} duration={500}>
             <Button cta="Learn More" anchor={true} href="linking" />
@@ -81,7 +80,7 @@ const BannerWrapper = styled.section`
       }
 
       h1 {
-        font-size: 1.75rem;
+        font-size: 2.5rem;
         line-height: 1.2;
 
         span {
@@ -95,14 +94,14 @@ const BannerWrapper = styled.section`
         margin-top: 0;
         margin-bottom: 2rem;
         line-height: 1.2;
-        font-size: 1.15rem;
+        font-size: 1.35rem;
 
         @media (min-width: 768px) {
-          font-size: 1.35rem;
+          font-size: 1.45rem;
         }
 
         @media (min-width: 1200px) {
-          font-size: 1.5rem;
+          font-size: 1.6rem;
         }
       }
 

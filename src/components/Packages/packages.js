@@ -5,8 +5,8 @@ const Packages = ({ title, para, children }) => {
   return (
     <PackagesWrapper>
       <div className="text-area">
-        <h2>{title}</h2>
-        <p>{para}</p>
+        {/* <h2>{title}</h2>
+        <p>{para}</p> */}
       </div>
       <div className="flex-container">{children}</div>
     </PackagesWrapper>

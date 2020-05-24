@@ -1,11 +1,5 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://thestartup.netlify.app">
-    <img alt="Startup Logo" src="/src/images/startup-logo-black.svg" width="200" />
-  </a>
-</p>
 <h1 align="center">
-  Startup
+  Party Quest Website
 </h1>
 
 Kick off your project with this startup boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.

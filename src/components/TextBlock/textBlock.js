@@ -60,6 +60,11 @@ const TextBlockWrapper = styled.section`
     text-shadow: 0px 0px 5px rgba(8, 0, 8, 1);
     opacity: 0.85;
   }
+
+  .appStoreButton {
+    width: 300px;
+    padding: 20px;
+  }
 `
 
 export default TextBlock

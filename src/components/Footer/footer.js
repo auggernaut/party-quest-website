@@ -6,13 +6,13 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <div className="credit">
-        Designed & developed by{" "}
+        Created by{" "}
         <a
-          href="http://www.morganbaker.dev"
+          href="https://www.auggernaut.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Morgan
+          Augustin Bralley
         </a>
       </div>
       {socialIcons.map((item, index) => {

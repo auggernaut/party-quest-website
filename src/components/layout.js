@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import "typeface-gothic-a1"
+import "typeface-londrina-solid"
 import "./reset.css"
 import Navbar from "../components/Navbar/navbar"
 import Footer from "../components/Footer/footer"
@@ -20,7 +20,7 @@ const LayoutWrapper = styled.div`
     box-sizing: border-box;
   }
 
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Londrina Solid", sans-serif;
   color: #fff;
   /* background-color: #060c21; */
   background: linear-gradient(45deg, #060c21, #0d0139);
@@ -57,7 +57,7 @@ const LayoutWrapper = styled.div`
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.45;
     margin: 1rem 0;
 
