@@ -29,8 +29,8 @@ export default () => (
       <Banner />
       <TextBlock
         id="about"
-        title="At the heart of tabletop roleplaying is storytelling."
-        paragraph="Sometimes you need a little nudge, a story prompt, some structure, and... monsters. Party Quest gets out of the way so you can focus on what matters: your story."
+        title="Let's face it, tabletop roleplaying isn't for everyone."
+        paragraph="Not everyone enjoys tracking stats, staying within the bounds combat, or having to get 6 people together at the same time/place... just to take an adventure of the imagination."
       >
       </TextBlock>
       <TextBlockImg
@@ -54,14 +54,14 @@ export default () => (
           <Perk
             img={perk3Img}
             alt="Applaud the players."
-            title="Reactor"
+            title="Reacter"
             content="Read along with the players and react to the story."
           />
         </div>
       </TextBlockImg>
       <Packages
-        title="Our Packages"
-        para="Choose the perfect solution for you. With benefits to suit all budgets Startup can offer amazing value and expert advice"
+        title="Screenshots"
+        para="Check out some screenshots from of our app."
       >
         <IconContext.Provider
           value={{

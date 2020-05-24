@@ -46,7 +46,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            The tabletop roleplay game that requires no table is here.
+            The tabletop roleplay game that requires no tables is here.
           </motion.p>
           <Link to="about" smooth={true} duration={500}>
             <Button cta="Learn More" anchor={true} href="linking" />

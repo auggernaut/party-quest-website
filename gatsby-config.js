@@ -8,10 +8,10 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: "Party Quest",
+    title: "Party Quest - Unleash Your Imagination",
     author: "Augustin Bralley",
     image: "/party-quest-logo.png",
-    description: `Roleplay for the rest of us.`,
+    description: `The roleplay game for the rest of us.`,
     siteUrl: "https://www.partyquest.us",
   },
   plugins: [
@@ -38,6 +38,7 @@ module.exports = {
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
   ],
