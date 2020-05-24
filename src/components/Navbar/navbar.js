@@ -70,8 +70,7 @@ const NavWrapper = styled.nav`
     justify-content: space-between;
 
     img {
-      width: 180px;
-      height: auto;
+      width: 200px;
 
       @media (min-width: 768px) {
         width: 200px;
