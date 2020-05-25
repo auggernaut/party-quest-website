@@ -29,8 +29,8 @@ export default () => (
       <Banner />
       <TextBlock
         id="about"
-        title="Let's face it, tabletop roleplaying isn't for everyone."
-        paragraph="Not everyone enjoys tracking stats, staying within the bounds combat, or having to get 6 people together at the same time/place... just to take an adventure of the imagination."
+        title="Tabletop roleplaying is oldschool."
+        paragraph="Let's face it, you and your friends can't meet every week to dig through manuals and check stats. But your imagination is boundless. That's why we took the essence of tabletop roleplay games, threw out most of the complexity, and wrapped it in an app so you can play anytime, anywhere, with anyone."
       >
       </TextBlock>
       <TextBlockImg
