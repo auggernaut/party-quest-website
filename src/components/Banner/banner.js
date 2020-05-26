@@ -38,7 +38,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            The <span>future</span> of roleplay here.
+            The <span>future</span> of roleplay is here.
           </motion.h1>
           <motion.p
             initial="hidden"
