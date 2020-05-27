@@ -61,6 +61,11 @@ const TextBlockWrapper = styled.section`
     opacity: 0.85;
   }
 
+  a {
+    color: #f441a5;
+    text-decoration: none; 
+  }
+
   .appStoreButton {
     width: 300px;
     padding: 20px;

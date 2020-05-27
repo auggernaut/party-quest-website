@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <NavWrapper>
       <div className="masthead flex-container">
-        <img src={Logo} alt="Party Quest logo" />
+        <a href="/"><img src={Logo} alt="Party Quest logo" /></a>
         <button
           className={
             isOpen

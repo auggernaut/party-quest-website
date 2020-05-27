@@ -91,6 +91,9 @@ export default () => (
         </Link> */}
         <img src={appStore} alt="Download on the AppStore" className="appStoreButton"/>
         <img src={playStore} alt="Download on Google Play" className="appStoreButton"/>
+        <p><a href="/privacy">
+          Privacy Policy
+        </a></p>
       </TextBlock>
       {/* <Contact
         id="contact"
