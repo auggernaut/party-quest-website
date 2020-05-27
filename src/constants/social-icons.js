@@ -4,14 +4,14 @@ import { FaDiscord, FaTwitter, FaInstagram } from "react-icons/fa"
 export default [
   {
     icon: <FaDiscord />,
-    url: "https://www.linkedin.com/in/morgan-baker-developer-inverness/",
+    url: "https://discord.gg/UefAGrT",
   },
   {
     icon: <FaTwitter />,
-    url: "https://github.com/bagseye",
+    url: "https://twitter.com/augustinbralley",
   },
   {
     icon: <FaInstagram />,
-    url: "https://github.com/bagseye",
+    url: "https://instagram.com/party_quest",
   },
 ]
