@@ -89,8 +89,11 @@ export default () => (
         {/* <Link to="perks" smooth={true} duration={500}>
           <Button cta="Tell Me More!" />
         </Link> */}
-        <img src={appStore} alt="Download on the AppStore" className="appStoreButton"/>
-        <img src={playStore} alt="Download on Google Play" className="appStoreButton"/>
+        <a href="https://apps.apple.com/us/app/party-quest/id1514070728?ls=1">
+          <img src={appStore} alt="Download on the AppStore" className="appStoreButton"/></a>
+        <a href="https://play.google.com/store/apps/details?id=com.auggernaut.partyquest">
+          <img src={playStore} alt="Download on Google Play" className="appStoreButton"/>
+        </a>
         <p><a href="/privacy">
           Privacy Policy
         </a></p>
