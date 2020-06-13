@@ -4,7 +4,7 @@ import { FaDiscord, FaTwitter, FaInstagram } from "react-icons/fa"
 export default [
   {
     icon: <FaDiscord />,
-    url: "https://discord.gg/UefAGrT",
+    url: "https://discord.gg/CvkrCRR",
   },
   {
     icon: <FaTwitter />,
