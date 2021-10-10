@@ -1,10 +1,10 @@
 export default [
   {
-    path: "/",
-    text: "about",
+    path: "/app",
+    text: "app",
   },
-  {
-    path: "/",
-    text: "download",
-  }
+	{
+    path: "/contact",
+    text: "contact",
+  },
 ]

@@ -34,18 +34,21 @@ const Navbar = () => {
       >
         {links.map((item, index) => {
           return (
-            <li key={index}>
-              <Link
-                activeClass="active"
-                to={item.text}
-                spy={true}
-                smooth={true}
-                duration={500}
-                offset={-50}
-              >
-                {item.text}
-              </Link>
-            </li>
+						!item.path ?
+							<li key={index}>
+								<Link
+									activeClass="active"
+									to={item.text}
+									spy={true}
+									smooth={true}
+									duration={500}
+									offset={-50}
+								>
+									{item.text}
+								</Link>
+							</li>
+						:
+						<li key={index}><a href={item.path}>{item.text}</a></li>
           )
         })}
       </ul>

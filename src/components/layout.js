@@ -101,6 +101,22 @@ const LayoutWrapper = styled.div`
   .text-center {
     text-align: center;
   }
+
+	#deckCards {
+		margin-left: auto;
+    margin-right: auto;
+		margin-bottom: 100px;
+    display: block;
+	}
+
+	@media (max-width: 768px) {
+		#deckCards {
+			width: 350px;
+		}
+		#howToVid {
+			width: 350px;
+		}
+	}
 `
 
 export default Layout

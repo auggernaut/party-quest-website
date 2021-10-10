@@ -5,6 +5,7 @@ import BackgroundImage from "gatsby-background-image"
 import Button from "../Button/button"
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
+import heroshot from "../../images/monster-characters.png"
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -32,13 +33,14 @@ const Banner = () => {
         fluid={data.file.childImageSharp.fluid}
       >
         <div className="hero-content">
+					<img src={heroshot} alt="Pick a game" className="heroshot"/>
           <motion.h1
             initial="hidden"
             animate="visible"
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1 }}
           >
-            The <span>future</span> of roleplay is here.
+          	<span>Unleash</span> your imagination.
           </motion.h1>
           <motion.p
             initial="hidden"
@@ -46,7 +48,7 @@ const Banner = () => {
             variants={variants}
             transition={{ ease: "easeOut", duration: 0.8, delay: 1.5 }}
           >
-            It doesn't need tabletops.
+            The tabletop roleplay game that's fast, easy, and infinite.
           </motion.p>
           <Link to="about" smooth={true} duration={500}>
             <Button cta="Learn More" anchor={true} href="linking" />
@@ -74,6 +76,11 @@ const BannerWrapper = styled.section`
       justify-content: center;
       margin-left: auto;
       margin-right: auto;
+
+			.heroshot {
+				max-width: 500px;
+				margin: 0 auto;
+			}
 
       @media (min-width: 768px) {
         max-width: 650px;
@@ -123,6 +130,12 @@ const BannerWrapper = styled.section`
           font-size: 4rem;
         }
       }
+
+			@media (max-width: 768px) {
+				.heroshot {
+					max-width: 300px;
+					margin: 0 auto;
+				}
     }
   }
 `

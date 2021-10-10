@@ -13,9 +13,9 @@ import Package from "../components/Package/package"
 import perk1Img from "../images/monster.png"
 import perk2Img from "../images/character.png"
 import perk3Img from "../images/emojis.png"
-import screenshot1 from "../images/games_list.jpg"
-import screenshot2 from "../images/screenshot5.jpg"
-import screenshot3 from "../images/screenshot4.jpg"
+import partyquestCardsDeck from "../images/partyquest-cards-deck.png"
+import deckbox from "../images/deck-box.png"
+import charactercards from "../images/character-cards.png"
 import appStore from "../images/app-store-badge.png"
 import playStore from "../images/google-play-badge-1.png"
 import SEO from "../components/SEO"
@@ -29,74 +29,31 @@ export default () => (
       <Banner />
       <TextBlock
         id="about"
-        title="Tabletop roleplaying is oldschool."
-        paragraph="Let's face it, you and your friends can't meet every week to dig through manuals and check stats. But your imagination is boundless. That's why we took the essence of tabletop roleplay games, threw out most of the complexity, and wrapped it in an app so you can play anytime, anywhere, with anyone."
+        title="Go on epic adventures without all the fuss."
+        paragraph="Let's face it, you and your friends can't meet every week to dig through manuals and check stats. But your imagination yearns to be free! That's why we took the essence of tabletop roleplay games, threw out most of the complexity, and put it all in a little box so you can go on a quest with anyone in record time."
       >
       </TextBlock>
+			<img src={partyquestCardsDeck} alt="Scene Cards" id="deckCards"/>
       <TextBlockImg
-        id="perks"
-        title="What is your role?"
-        subtitle="Whether you have an adventure in mind, a character with a wild backstory, or an itch to read along and react... there's a role for you."
+        id="how-to-play"
+        title="How to Play"
+        subtitle="Party Quest is designed to be as easy to learn as possible. Watch this video to get started quickly."
       >
-        <div className="flex-container trio-block">
-          <Perk
-            img={perk1Img}
-            alt="Gamemaster creates the game."
-            title="Gamemaster"
-            content="Get the story started and describe what happens next."
-          />
-          <Perk
-            img={perk2Img}
-            alt="Characters take actions."
-            title="Character"
-            content="Design a character, take actions, and stay alive."
-          />
-          <Perk
-            img={perk3Img}
-            alt="Applaud the players."
-            title="Reacter"
-            content="Read along with the players and react to the story."
-          />
-        </div>
-      </TextBlockImg>
-      <Packages
-        title="Screenshots"
-        para="Check out some screenshots from of our app."
-      >
-        <IconContext.Provider
-          value={{
-            color: "#7FFF00",
-            size: "1.2em",
-            style: { verticalAlign: "middle", marginRight: "5px" },
-          }}
-        >
-          <Package title="Standard">
-            <img src={screenshot3} alt="Pick a game" className="screenshot"/>
-          </Package>
-          <Package title="Hyper" active={true}>
-            <img src={screenshot1} alt="Pick a game" className="screenshot"/>
-          </Package>
-          <Package title="Super">
-          <img src={screenshot2} alt="Pick a game" className="screenshot"/>
-          </Package>
-        </IconContext.Provider>
-      </Packages>
+        <iframe width="560" height="315" id='howToVid' src="https://www.youtube.com/embed/Knau88eqNfM" title="How to play Party Quest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<p>
+          Read the full up-to-date <a href="https://docs.google.com/document/d/1fTr2XkiEnA0suVHdzazEPj3fywvVE2qd/edit?usp=sharing&ouid=106580776012275822055&rtpof=true&sd=true" class="rules">rules</a>.
+        </p>
+			</TextBlockImg>
       <TextBlock
         id="download"
-        title="Download the App"
-        paragraph="Available for Free on iOS and Android."
+        title="Interesting in Playtesting?"
+        paragraph="We're looking for individuals and groups who would be interesting in playtesting."
       >
         {/* <Link to="perks" smooth={true} duration={500}>
           <Button cta="Tell Me More!" />
         </Link> */}
-        <a href="https://apps.apple.com/us/app/party-quest/id1514070728?ls=1">
-          <img src={appStore} alt="Download on the AppStore" className="appStoreButton"/></a>
-        <a href="https://play.google.com/store/apps/details?id=com.auggernaut.partyquest">
-          <img src={playStore} alt="Download on Google Play" className="appStoreButton"/>
-        </a>
-        <p><a href="/privacy">
-          Privacy Policy
-        </a></p>
+        <p>Fill out <a href="https://forms.gle/tbXakeUiS3m7fQFP6">
+          this form</a> and we'll contact you shortly.</p>
       </TextBlock>
       {/* <Contact
         id="contact"
