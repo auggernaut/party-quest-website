@@ -1,10 +1,10 @@
 export default [
   {
     path: "/app",
-    text: "app",
+    text: "Mobile App",
   },
-	{
-    path: "/contact",
-    text: "contact",
-  },
+	// {
+  //   path: "/contact",
+  //   text: "contact",
+  // },
 ]

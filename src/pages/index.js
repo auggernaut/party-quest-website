@@ -3,21 +3,10 @@ import Layout from "../components/layout"
 import Banner from "../components/Banner/banner"
 import TextBlock from "../components/TextBlock/textBlock"
 import TextBlockImg from "../components/TextBlockImg/textBlockImg"
-import Perk from "../components/Perk/perk"
-// import Button from "../components/Button/button"
-import Packages from "../components/Packages/packages"
-import Package from "../components/Package/package"
 // import Contact from "../components/Contact/contact"
 // import { Link } from "react-scroll"
 
-import perk1Img from "../images/monster.png"
-import perk2Img from "../images/character.png"
-import perk3Img from "../images/emojis.png"
 import partyquestCardsDeck from "../images/partyquest-cards-deck.png"
-import deckbox from "../images/deck-box.png"
-import charactercards from "../images/character-cards.png"
-import appStore from "../images/app-store-badge.png"
-import playStore from "../images/google-play-badge-1.png"
 import SEO from "../components/SEO"
 
 import { IconContext } from "react-icons"
@@ -45,9 +34,9 @@ export default () => (
         </p>
 			</TextBlockImg>
       <TextBlock
-        id="download"
-        title="Interesting in Playtesting?"
-        paragraph="We're looking for individuals and groups who would be interesting in playtesting."
+        id="playtesting"
+        title="Interested in Playtesting?"
+        paragraph="We're looking for individuals and groups who would would like to try out the game and help with it's development."
       >
         {/* <Link to="perks" smooth={true} duration={500}>
           <Button cta="Tell Me More!" />
